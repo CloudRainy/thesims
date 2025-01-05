@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidéos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="video-background" id="welcome-video">
+        <video autoplay muted loop id="background-video">
+            <source src="video/background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-burger">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <nav>
+        <img src="../img/sims4_logo.png" alt="logo" id="logo">
+        <ul>
+            <li id="afficher-accueil"><a href="../index.html">Accueil</a></li>
+            <li><a href="introduction.html">Présentation</a></li>
+            <li><a href="caracters.html">Personnages</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">Jeu</a>
+                <div class="dropdown-content">
+                    <a href="quizz.html">Quiz</a>
+                    <a href="flashcard.html">Flashcard</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">Audiovisuel</a>
+                <div class="dropdown-content">
+                    <a href="music.html">Musique</a>
+                    <a href="videos.html">Vidéos en lien avec le jeu</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">A propos</a>
+                <div class="dropdown-content">
+                    <a href="about.html">Crédits</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="conteneur">
+        <h1>Découvrez le meilleur de la communauté</h1>
+    
+        <h2>Présentation du jeu par les producteurs des Sims 4</h2>
+        <iframe id="presentation-off" src="https://www.youtube.com/embed/q5uyCzXm3RQ?si=exznvVV2nkPKf7Ka&amp;start=45" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="video-description">
+            Découvrez une présentation complète du jeu par les développeurs des Sims 4.
+            <a href="https://www.youtube.com/watch?v=q5uyCzXm3RQ" class="lien-yt" target="_blank">Regarder sur YouTube</a>
+        </p>
+    
+        <h2>Les Sims 4 : 10 astuces pour bien débuter</h2>
+        <iframe id="tips" src="https://www.youtube.com/embed/lR4tzCKebHU?si=0QMG-TXhcztIg-wi&amp;start=71" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="video-description">
+            Voici 10 astuces pour bien commencer votre aventure dans Les Sims 4.
+            <a href="https://www.youtube.com/watch?v=lR4tzCKebHU" class="lien-yt" target="_blank">Regarder sur YouTube</a>
+        </p>
+    
+        <h2>Comment bien débuter sur les Sims 4 ?</h2>
+        <iframe src="https://www.youtube.com/embed/Rpf6VcuNUsU?si=yaPYyyYTeqPWc0ND" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="video-description">
+            Un guide complet pour bien débuter dans Les Sims 4.
+            <a href="https://www.youtube.com/watch?v=Rpf6VcuNUsU" class="lien-yt" target="_blank">Regarder sur YouTube</a>
+        </p>
+    
+        <h2>Découvrir le mode construction</h2>
+        <iframe src="https://www.youtube.com/embed/q4-KID-TcNE?si=OeSf8ug_VAP1lE5d" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="video-description">
+            Explorez le mode construction des Sims 4 avec ce tutoriel.
+            <a href="https://www.youtube.com/watch?v=q4-KID-TcNE" class="lien-yt" target="_blank">Regarder sur YouTube</a>
+        </p>
+    
+        <h2>Michou découvre les Sims 4</h2>
+        <iframe src="https://www.youtube.com/embed/jOjw0ho0PDU?si=8YS6DPPrXec1pVID&amp;start=71" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="video-description">
+            Michou explore Les Sims 4 pour la première fois.
+            <a href="https://www.youtube.com/watch?v=jOjw0ho0PDU" class="lien-yt" target="_blank">Regarder sur YouTube</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Les Sims 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-burger">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <nav>
+        <img src="../img/sims4_logo.png" alt="logo" id="logo">
+        <ul>
+            <li id="afficher-accueil"><a href="../index.html">Accueil</a></li>
+            <li><a href="introduction.html">Présentation</a></li>
+            <li><a href="caracters.html">Personnages</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">Jeu</a>
+                <div class="dropdown-content">
+                    <a href="quizz.html">Quiz</a>
+                    <a href="flashcard.html">Flashcard</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">Audiovisuel</a>
+                <div class="dropdown-content">
+                    <a href="music.html">Musique</a>
+                    <a href="videos.html">Vidéos en lien avec le jeu</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">A propos</a>
+                <div class="dropdown-content">
+                    <a href="about.html">Crédits</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="conteneur">
+        <!-- Contrôle des questions -->
+        <input type="radio" name="quiz" id="q1" checked>
+        <input type="radio" name="quiz" id="q2">
+        <input type="radio" name="quiz" id="q3">
+        <input type="radio" name="quiz" id="q4">
+        <input type="radio" name="quiz" id="q5">
+        <input type="radio" name="quiz" id="q6">
+        <input type="radio" name="quiz" id="q7">
+        <input type="radio" name="quiz" id="q8">
+        <input type="radio" name="quiz" id="q9">
+        <input type="radio" name="quiz" id="q10">
+
+        <!-- Question 1 -->
+        <div class="question" id="question1">
+            <h2>Quels sont les besoins de base des Sims dans Les Sims 4 ?</h2>
+            <div class="reponse">
+                <label for="q1-a" class="bonne-reponse">
+                    <input type="radio" name="q1" id="q1-a">
+                    <span class="reponse-text">Faim, soif, sommeil, hygiène, socialisation, divertissement.</span>
+                </label>
+                <label for="q1-b" class="mauvaise-reponse">
+                    <input type="radio" name="q1" id="q1-b">
+                    <span class="reponse-text">Faim, soif, sommeil, travail, argent, divertissement.</span>
+                </label>
+                <label for="q1-c" class="mauvaise-reponse">
+                    <input type="radio" name="q1" id="q1-c">
+                    <span class="reponse-text">Faim, soif, sommeil, hygiène, travail, argent.</span>
+                </label>
+                <label for="q1-d" class="mauvaise-reponse">
+                    <input type="radio" name="q1" id="q1-d">
+                    <span class="reponse-text">Faim, soif, sommeil, hygiène, socialisation, travail.</span>
+                </label>
+            </div>
+            <label for="q2" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" id="question2">
+            <h2>Quelle activité permet à un Sim d'améliorer sa compétence en peinture ?</h2>
+            <div class="reponse">
+                <label for="q2-a" class="mauvaise-reponse">
+                    <input type="radio" name="q2" id="q2-a">
+                    <span class="reponse-text">Jouer de la musique.</span>
+                </label>
+                <label for="q2-b" class="mauvaise-reponse">
+                    <input type="radio" name="q2" id="q2-b">
+                    <span class="reponse-text">Cuisiner.</span>
+                </label>
+                <label for="q2-c" class="bonne-reponse">
+                    <input type="radio" name="q2" id="q2-c">
+                    <span class="reponse-text">Peindre.</span>
+                </label>
+                <label for="q2-d" class="mauvaise-reponse">
+                    <input type="radio" name="q2" id="q2-d">
+                    <span class="reponse-text">Jardiner.</span>
+                </label>
+            </div>
+            <label for="q1" class="btn-suivant">Précédent</label>
+            <label for="q3" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" id="question3">
+            <h2>Que permettent les packs d'extension dans Les Sims 4 ?</h2>
+            <div class="reponse">
+                <label for="q3-a" class="bonne-reponse">
+                    <input type="radio" name="q3" id="q3-a">
+                    <span class="reponse-text">Ajouter de nouvelles fonctionnalités et du contenu.</span>
+                </label>
+                <label for="q3-b" class="mauvaise-reponse">
+                    <input type="radio" name="q3" id="q3-b">
+                    <span class="reponse-text">Rendre le jeu plus difficile.</span>
+                </label>
+                <label for="q3-c" class="mauvaise-reponse">
+                    <input type="radio" name="q3" id="q3-c">
+                    <span class="reponse-text">Supprimer des fonctionnalités existantes.</span>
+                </label>
+                <label for="q3-d" class="mauvaise-reponse">
+                    <input type="radio" name="q3" id="q3-d">
+                    <span class="reponse-text">Rendre le jeu gratuit.</span>
+                </label>
+            </div>
+            <label for="q2" class="btn-suivant">Précédent</label>
+            <label for="q4" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question" id="question4">
+            <h2>Qui a composé la bande-son des Sims 4 ?</h2>
+            <div class="reponse">
+                <label for="q4-a" class="mauvaise-reponse">
+                    <input type="radio" name="q4" id="q4-a">
+                    <span class="reponse-text">Hans Zimmer.</span>
+                </label>
+                <label for="q4-b" class="bonne-reponse">
+                    <input type="radio" name="q4" id="q4-b">
+                    <span class="reponse-text">Ilan Eshkeri</span>
+                </label>
+                <label for="q4-c" class="mauvaise-reponse">
+                    <input type="radio" name="q4" id="q4-c">
+                    <span class="reponse-text">John Williams.</span>
+                </label>
+                <label for="q4-d" class="mauvaise-reponse">
+                    <input type="radio" name="q4" id="q4-d">
+                    <span class="reponse-text">Nobuo Uematsu.</span>
+                </label>
+            </div>
+            <label for="q3" class="btn-suivant">Précédent</label>
+            <label for="q5" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question" id="question5">
+            <h2>En quelle année Les Sims 4 est-il devenu gratuit ?</h2>
+            <div class="reponse">
+                <label for="q5-a" class="mauvaise-reponse">
+                    <input type="radio" name="q5" id="q5-a">
+                    <span class="reponse-text">2020.</span>
+                </label>
+                <label for="q5-b" class="mauvaise-reponse">
+                    <input type="radio" name="q5" id="q5-b">
+                    <span class="reponse-text">2021.</span>
+                </label>
+                <label for="q5-c" class="bonne-reponse">
+                    <input type="radio" name="q5" id="q5-c">
+                    <span class="reponse-text">2022.</span>
+                </label>
+                <label for="q5-d" class="mauvaise-reponse">
+                    <input type="radio" name="q5" id="q5-d">
+                    <span class="reponse-text">2023.</span>
+                </label>
+            </div>
+            <label for="q4" class="btn-suivant">Précédent</label>
+            <label for="q6" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question" id="question6">
+            <h2>Que permet de faire le mode construction dans Les Sims 4 ?</h2>
+            <div class="reponse">
+                <label for="q6-a" class="mauvaise-reponse">
+                    <input type="radio" name="q6" id="q6-a">
+                    <span class="reponse-text">Créer des vêtements pour les Sims.</span>
+                </label>
+                <label for="q6-b" class="bonne-reponse">
+                    <input type="radio" name="q6" id="q6-b">
+                    <span class="reponse-text">Construire et personnaliser des maisons.</span>
+                </label>
+                <label for="q6-c" class="mauvaise-reponse">
+                    <input type="radio" name="q6" id="q6-c">
+                    <span class="reponse-text">Améliorer les compétences des Sims.</span>
+                </label>
+                <label for="q6-d" class="mauvaise-reponse">
+                    <input type="radio" name="q6" id="q6-d">
+                    <span class="reponse-text">Gérer les relations entre les Sims.</span>
+                </label>
+            </div>
+            <label for="q5" class="btn-suivant">Précédent</label>
+            <label for="q7" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question" id="question7">
+            <h2>En quelle année est sorti Les Sims 1 ?</h2>
+            <div class="reponse">
+                <label for="q7-a" class="mauvaise-reponse">
+                    <input type="radio" name="q7" id="q7-a">
+                    <span class="reponse-text">1998.</span>
+                </label>
+                <label for="q7-b" class="bonne-reponse">
+                    <input type="radio" name="q7" id="q7-b">
+                    <span class="reponse-text">2000.</span>
+                </label>
+                <label for="q7-c" class="mauvaise-reponse">
+                    <input type="radio" name="q7" id="q7-c">
+                    <span class="reponse-text">2002.</span>
+                </label>
+                <label for="q7-d" class="mauvaise-reponse">
+                    <input type="radio" name="q7" id="q7-d">
+                    <span class="reponse-text">2004.</span>
+                </label>
+            </div>
+            <label for="q6" class="btn-suivant">Précédent</label>
+            <label for="q8" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question" id="question8">
+            <h2>Quelle nouveauté Les Sims 2 a-t-il introduit par rapport à Les Sims 1 ?</h2>
+            <div class="reponse">
+                <label for="q8-a" class="bonne-reponse">
+                    <input type="radio" name="q8" id="q8-a">
+                    <span class="reponse-text">Des graphismes 3D et un système de vieillissement.</span>
+                </label>
+                <label for="q8-b" class="mauvaise-reponse">
+                    <input type="radio" name="q8" id="q8-b">
+                    <span class="reponse-text">Un monde ouvert.</span>
+                </label>
+                <label for="q8-c" class="mauvaise-reponse">
+                    <input type="radio" name="q8" id="q8-c">
+                    <span class="reponse-text">Des émotions réalistes.</span>
+                </label>
+                <label for="q8-d" class="mauvaise-reponse">
+                    <input type="radio" name="q8" id="q8-d">
+                    <span class="reponse-text">Un mode construction révolutionnaire.</span>
+                </label>
+            </div>
+            <label for="q7" class="btn-suivant">Précédent</label>
+            <label for="q9" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question" id="question9">
+            <h2>Quelle fonctionnalité Les Sims 3 a-t-il introduit ?</h2>
+            <div class="reponse">
+                <label for="q9-a" class="bonne-reponse">
+                    <input type="radio" name="q9" id="q9-a">
+                    <span class="reponse-text">Un monde ouvert.</span>
+                </label>
+                <label for="q9-b" class="mauvaise-reponse">
+                    <input type="radio" name="q9" id="q9-b">
+                    <span class="reponse-text">Des graphismes 3D.</span>
+                </label>
+                <label for="q9-c" class="mauvaise-reponse">
+                    <input type="radio" name="q9" id="q9-c">
+                    <span class="reponse-text">Des émotions réalistes.</span>
+                </label>
+                <label for="q9-d" class="mauvaise-reponse">
+                    <input type="radio" name="q9" id="q9-d">
+                    <span class="reponse-text">Un système de vieillissement.</span>
+                </label>
+            </div>
+            <label for="q8" class="btn-suivant">Précédent</label>
+            <label for="q10" class="btn-suivant">Suivant</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question" id="question10">
+            <h2>Quelle est la principale nouveauté de Les Sims 4 par rapport aux versions précédentes ?</h2>
+            <div class="reponse">
+                <label for="q10-a" class="mauvaise-reponse">
+                    <input type="radio" name="q10" id="q10-a">
+                    <span class="reponse-text">Des graphismes améliorés.</span>
+                </label>
+                <label for="q10-b" class="bonne-reponse">
+                    <input type="radio" name="q10" id="q10-b">
+                    <span class="reponse-text">Des émotions plus réalistes.</span>
+                </label>
+                <label for="q10-c" class="mauvaise-reponse">
+                    <input type="radio" name="q10" id="q10-c">
+                    <span class="reponse-text">Un monde ouvert.</span>
+                </label>
+                <label for="q10-d" class="mauvaise-reponse">
+                    <input type="radio" name="q10" id="q10-d">
+                    <span class="reponse-text">Un système de vieillissement.</span>
+                </label>
+            </div>
+            <label for="q9" class="btn-suivant">Précédent</label>
+        </div>
+    </div>
+
+    <footer>
+        <p> 2025 CloudRainy <a id="github" href="https://github.com/CloudRainy"><i class="fa-brands fa-github"></i></a> - Les Sims 4 &copy; Tous droits réservés </p>
+    </footer>
+</body>
+</html>

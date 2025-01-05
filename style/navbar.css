@@ -1,0 +1,340 @@
+/* Importer les polices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+
+/* Style de base */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	font-family: Poppins, sans-serif;
+	flex-direction: column;
+	/* Organiser les éléments en colonne */
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	/* Navbar en haut, contenu au milieu, footer en bas */
+}
+
+/* Style de la barre de navigation */
+nav {
+	font-family: Poppins, sans-serif;
+	background: linear-gradient(90deg, rgba(86, 174, 87, 0.9), rgba(149, 213, 178, 0.85));
+	backdrop-filter: blur(5px);
+	width: 90%;
+	margin: 20px auto;
+	padding: 1rem;
+	border-radius: 1.5em;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	z-index: 10;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	width: 100%;
+}
+
+#afficher-accueil {
+	display: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.05rem;
+	font-weight: bold;
+	background: linear-gradient(to top, #ffa500 0%, #ffa500 10%, transparent 20%) no-repeat left bottom / 0 100%;
+	transition: background-size .5s;
+	white-space: nowrap;
+}
+
+/* Animation soulignement des elem de la navbar */
+nav ul li a:not(.dropdown):hover {
+	background-size: 100% 85%;
+	color: #ffa500;
+	transform: translateY(-2px);
+	transition: all 0.3s ease;
+}
+
+/* Style des dropdowns */
+/* Style de base pour les dropdowns */
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	/* Masqué par défaut */
+	position: absolute;
+	background-color: #fff;
+	min-width: 160px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	border-radius: 0.5rem;
+	top: 100%;
+	/* Position sous le lien parent */
+	left: 0;
+	padding: 0.5rem 0;
+
+}
+
+/* Afficher le dropdown au survol */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Style des liens dans le dropdown */
+.dropdown-content a {
+	color: #000;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	display: block;
+}
+
+/* Effet de survol pour les liens du dropdown */
+.dropdown-content a:hover {
+	background-color: #f5f5f5;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.menu-burger {
+	display: none;
+}
+
+.video-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#background-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+	opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+
+	/* Styles de base pour mobile */
+	nav {
+		font-family: Poppins, sans-serif;
+		background: linear-gradient(90deg, rgba(86, 174, 87, 0.9), rgba(149, 213, 178, 0.85));
+		backdrop-filter: blur(5px);
+		width: 90%;
+		margin: 20px auto;
+		padding: 1rem;
+		border-radius: 1.5em;
+		position: static;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	.menu-burger {
+		position: fixed;
+		display: block;
+		right: 2rem;
+		top: 2rem;
+		font-size: 1.8em;
+		cursor: pointer;
+		z-index: 10000;
+		color: white;
+		transition: transform 0.3s ease;
+		/* Animation pour le bouton burger */
+	}
+
+	/* Styles quand le menu est déployé */
+	.menu-toggle:checked~nav {
+		position: fixed;
+		inset: 0;
+		backdrop-filter: blur(10px);
+		/* Effet de flou */
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 9999;
+		border-radius: 0;
+	}
+
+	.menu-toggle:checked~nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		gap: 2rem;
+		margin: 0;
+		padding: 0;
+		transform: translateY(-100%);
+		/* Cache le menu en haut */
+		animation: slideDown 0.5s ease forwards;
+		/* Animation de descente */
+	}
+
+	/* Animation de descente */
+	@keyframes slideDown {
+		from {
+			transform: translateY(-100%);
+			/* Départ : menu en haut */
+		}
+
+		to {
+			transform: translateY(0);
+			/* Arrivée : menu en position normale */
+		}
+	}
+
+	.menu-toggle:checked~nav ul li {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.menu-toggle:checked~nav ul li a {
+		color: white;
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	/* Ne pas afficher le titre des dropdown, seulement le contenu */
+	.menu-toggle:checked~nav .dropdown-title {
+		display: none;
+	}
+
+	.menu-toggle:checked~nav .dropdown-content {
+		display: flex;
+		flex-direction: column;
+		position: static;
+		background: none;
+		box-shadow: none;
+		padding: 0;
+		min-width: unset;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.menu-toggle:checked~nav .dropdown-content a {
+		padding: 0;
+		color: white;
+		background: none;
+		text-align: center;
+	}
+
+	.menu-toggle:checked~nav #logo {
+		display: none;
+	}
+
+	/* Animation du bouton burger en croix */
+	.menu-toggle:checked~.menu-burger {
+		transform: rotate(90deg);
+		/* Rotation du bouton burger */
+	}
+
+	.menu-toggle:checked~.menu-burger .fa-bars:before {
+		content: "\f00d";
+	}
+
+	/* Supprime le soulignement des liens quand le menu est ouvert en mobile */
+	.menu-toggle:checked~nav ul li a {
+		background-size: 0 100%;
+	}
+
+	#afficher-accueil {
+		display: block;
+	}
+}
+
+#logo {
+	position: static;
+	width: 100px;
+	margin-right: 20px;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	padding: 5px;
+	margin-top: auto;
+	text-align: center;
+
+
+}
+
+/* Bouton */
+
+.button {
+	--primary-color: #644dff;
+	--secondary-color: #4836bb;
+	--shadow-color: #654dff63;
+
+	cursor: pointer;
+	width: 10rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1em;
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: #fff;
+	background: var(--primary-color);
+	border: 2px solid var(--secondary-color);
+	border-radius: 0.75rem;
+	box-shadow: 0 8px 0 var(--secondary-color);
+	transform: skew(-10deg);
+	transition: all 0.2s ease;
+	filter: drop-shadow(0 10px 15px var(--shadow-color));
+}
+
+.button p {
+	transform: skew(10deg);
+	transition: transform 0.2s ease;
+}
+
+.button:hover {
+	background: var(--secondary-color);
+	box-shadow: 0 4px 0 var(--shadow-color);
+	transform: skew(-10deg) scale(1.05);
+}
+
+.button:active {
+	letter-spacing: 1px;
+	transform: skew(-10deg) translateY(8px);
+	box-shadow: 0 0 0 var(--shadow-color);
+	transition: all 0.1s ease;
+}
+
+
+.button:disabled {
+	background: #ccc;
+	border-color: #999;
+	box-shadow: 0 8px 0 #999;
+	cursor: not-allowed;
+	opacity: 0.7;
+}

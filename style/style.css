@@ -1,0 +1,685 @@
+h1,h2,h3,h4 {
+  font-family: Bungee;
+ /* Police pour les titres */
+}
+p{
+  font-family: Quicksand;
+ /* Police pour les paragraphes */
+}
+
+.conteneur {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 75%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+ /* Animation menu flottant au chargement */
+  transform: translateY(50px);
+  animation: slideUp 1s ease forwards;
+  animation-delay: 0.25s;
+}
+p {
+  font-size: 1.2rem;
+}
+.conteneur h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+.conteneur h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+ }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+ }
+}
+/* Iframe pour concevoir un personnage */
+#avatar {
+  width: 100%;
+  height: 70vh;
+  border-radius: 1.5rem;
+  margin: 0 auto;
+}
+/* Page index.html */
+#accueil-titre {
+  align-content: center;
+  text-align: center;
+}
+#accueil-text {
+  font-size: 9rem;
+  font-weight: 600;
+ /* Gras */
+  color: #fff;
+ /* Couleur du texte */
+  text-transform: uppercase;
+ /* Majuscules */
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 10px #ff7e5f, 
+ /* Lueur orange clair */
+  0 0 20px #ff7e5f, 
+ /* Lueur plus large */
+  0 0 40px #ff7e5f, 
+ /* Lueur encore plus large */
+  0 0 80px #ff7e5f;
+ /* Lueur très large */
+  animation: fadeIn 3s ease-in-out, float 2.3s ease-in-out infinite;
+}
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+ }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+ }
+}
+/* Animation de flottement */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+ }
+  50% {
+      transform: translateY(-10px);
+ }
+}
+/* Page music.html */
+#music-audio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem auto;
+  width: 100%;
+}
+/* Bouton pour jouer la musique */
+.audio {
+  display: grid;
+  max-width: 1200px;
+}
+audio {
+  width: 100%;
+ /* Largeur du lecteur */
+  max-width: 400px;
+ /* Largeur maximale */
+  background-color: #f1f1f1;
+ /* Fond */
+  border-radius: 10px;
+ /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ /* Ombre */
+}
+#music-presentation {
+  text-align: justify;
+}
+#music-img {
+  width: 100%;
+ /* Largeur de l'image */
+  align-content: middle;
+}
+#music-img img{
+  width: 100%;
+ /* Largeur de l'image */
+  border-radius: 5px;
+  box-shadow: #121010 0 0 10px;
+}
+/* Page présentation */
+#presentation {
+  display: flex;
+  flex-direction: flex-start;
+ /* Aligner les elements en haut */
+  gap: 2rem;
+ /* Espacement entre les éléments */
+  margin: 2rem auto;
+  width: 100%;
+}
+#baniere img {
+  width: 100%;
+ /* Image pleine largeur dans son conteneur */
+  border-radius: 5px;
+}
+.main-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+}
+#besoin {
+  display: flex;
+  text-align: justify;
+  gap: 2rem;
+}
+.besoin img {
+  margin-left: 1rem;
+  width: 50%;
+}
+.conteneur .presentation-txt {
+  text-align: justify;
+  width: 100%;
+  font-size: 1.2rem;
+}
+#competence {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ /* Deux colonnes de largeur égale */
+  gap: 2rem;
+ /* Espacement entre les colonnes */
+  align-items: center;
+ /* Aligner les éléments verticalement au centre */
+  margin: 2rem 0;
+ /* Espacement autour du bloc */
+}
+#competence-txt {
+  padding: 1rem;
+  text-align: justify;
+ /* Justifier le texte */
+}
+#competence {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+#competence-txt {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+/* Style de base pour la section Compétences */
+.competence-section {
+  display: flex;
+  gap: 2rem;
+ /* Espacement entre le carrousel et le contenu */
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+/* Style pour le carrousel */
+.carousel {
+  margin: auto;
+ /* Centrer verticalement*/
+  flex: 1;
+ /* 1 part de l'espace */
+  overflow: hidden;
+ /* Masquer le débordement des images */
+}
+.carousel-images {
+  display: flex;
+  gap: 1rem;
+ /* Espacement entre les images */
+  animation: scroll 7s linear infinite;
+ /* Animation de défilement */
+}
+.carousel-images img {
+  width: 100%;
+ /* Largeur des images */
+  height: auto;
+  border-radius: 0.5rem;
+}
+/* Animation de défilement */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+ }
+  100% {
+      transform: translateX(-100%);
+ }
+}
+/* Style pour le contenu (texte et liste de compétences) */
+.conteneur-competence {
+  flex: 1;
+ /* Le contenu prend 2 parts de l'espace */
+}
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+/* Style pour la liste des compétences */
+.competence-liste {
+  list-style: none;
+ /* Supprimer les puces par défaut */
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ /* Grille flexible */
+  gap: 1rem;
+ /* Espacement entre les éléments */
+}
+.competence-liste li {
+  display: flex;
+  align-items: center;
+ /* Aligner les icônes et le texte verticalement */
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ /* Ombre sympa */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.competence-liste li:hover {
+  transform: translateY(-5px);
+ /* Effet de survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Style pour les icônes FontAwesome */
+.icon {
+  font-size: 1.5rem;
+ /* Taille des icônes */
+  margin-right: 1rem;
+ /* Espacement entre l'icône et le texte */
+  color: #644dff;
+ /* Couleur des icônes */
+}
+/* Style pour le texte des compétences */
+.skill {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: bold;
+}
+details {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 2rem;
+}
+details[open] {
+  max-height: 1000px;
+ /* Ajustez cette valeur si nécessaire */
+}
+/* Spoiler */
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #644dff;
+ /* Couleur du texte */
+}
+/* Descrpition du spoiler */
+summary:hover {
+  color: #4836bb;
+ /* Couleur au survol */
+}
+.cheat-category {
+  margin-top: 1rem;
+}
+/* Ajouter de la distance aux boulettes */
+.cheat-list {
+  margin-left: 1.5rem;
+}
+.how-to-play img {
+  width: 100%;
+ /* Images pleine largeur */
+  border-radius: 5px;
+  margin: 1rem 0;
+ /* Espacement autour des images */
+}
+#gameplay-img {
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: #121010 0 0 10px;
+}
+#introduction-bande-son {
+  margin-bottom: 0.75rem;
+}
+/* Page videos */
+.conteneur iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.conteneur iframe:hover {
+  transform: scale(1.03);
+ /* Zoom au survol */
+}
+/* Style pour les descriptions sous les vidéos */
+.video-description {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0;
+  text-align: center;
+}
+/* Style pour les liens YouTube */
+.lien-yt {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #644dff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.lien-yt {
+  text-decoration: none;
+  color: #4836bb;
+  background: linear-gradient(to top, #4836bb 0%, #4836bb 10%, transparent 20%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+  white-space: nowrap;
+}
+/* Animation soulignement des elem de la navbar */
+.lien-yt:hover {
+  background-size: 100% 85%;
+  color: #4836bb;
+  transform: translateY(-2px);
+ /* Décaler vers le haut */
+  transition: all 0.3s ease;
+}
+/* Styles pour la timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #644dff;
+  transform: translateX(-50%);
+}
+.timeline-event {
+  position: relative;
+  width: 50%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+/* Déplace 1 élément sur 2 à gauche */
+.timeline-event:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+/* Déplace 1 élément sur 2 à droite */
+.timeline-event:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+.timeline-date {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #644dff;
+  margin-bottom: 0.5rem;
+}
+.timeline-content {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.timeline-content h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+.timeline-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+ /* Espacement des lignes */
+}
+/* Points sur la ligne de la timeline */
+.timeline-event::before {
+  content: '';
+  position: absolute;
+ /* Position */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #644dff;
+  border: 4px solid white;
+ /* Aligne la boule au milieu */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+ /* Au dessus du contenu */
+}
+/* Décale la boule à droite des élements impairs*/
+.timeline-event:nth-child(odd)::before {
+  right: -10px;
+}
+/* Décale la boule à gauche des éléments pairs*/
+.timeline-event:nth-child(even)::before {
+  left: -10px;
+}
+/* Quiz */
+/* On cache les questions par défaut */
+/* Grille pour les réponses */
+/* Cacher toutes les questions par défaut */
+.question {
+  display: none;
+}
+/* Afficher la question correspondant au bouton radio sélectionné */
+#q1:checked ~ #question1, #q2:checked ~ #question2, #q3:checked ~ #question3, #q4:checked ~ #question4, #q5:checked ~ #question5, #q6:checked ~ #question6, #q7:checked ~ #question7, #q8:checked ~ #question8, #q9:checked ~ #question9, #q10:checked ~ #question10{
+  display: block;
+}
+.reponse {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ /* 2 colonnes */
+  gap: 10px;
+ /* Espace entre les boutons */
+}
+/* Style des boutons de réponse */
+.reponse label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.reponse label:hover {
+  background-color: #e0e0e0;
+}
+/* Cacher bouton de selection */
+input {
+  display: none;
+}
+.question h2 {
+  text-align: center;
+}
+/* Cacher la puce radio */
+.reponse input[type="radio"] {
+  display: none;
+}
+/* Style pour les réponses sélectionnées */
+.reponse input[type="radio"]:checked + .reponse-text {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+/* Style pour les bonnes réponses */
+.bonne-reponse input[type="radio"]:checked + .reponse-text {
+  background-color: #4caf50;
+ /* Vert */
+  border-color: #4caf50;
+}
+/* Style pour les mauvaises réponses */
+.mauvaise-reponse input[type="radio"]:checked + .reponse-text {
+  background-color: #f44336;
+ /* Rouge */
+  border-color: #f44336;
+}
+/* Boutons Suivant/Précédent */
+.btn-suivant {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0fed13;
+  color: white;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-suivant:hover {
+  background-color: #1b00b3;
+  transition: all ease 1s;
+}
+.button {
+  width: 20%;
+  margin: auto;
+  min-width: 200px 
+}
+/* Page formulaire */
+#conteneur-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ /* Deux colonnes */
+  gap: 2rem;
+ /* Espacement entre les colonnes */
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+#contact form {
+  margin: 0 auto;
+ /* Centre horizontalement */
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid #4f474e;
+}
+/* Rectangle équipe */
+#credit {
+  text-align: center;
+}
+#equipe {
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: #30d21018;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+}
+#equipe img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+#contact h2 {
+  text-align: center;
+}
+#contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+#contact input[type="text"], #contact input[type="email"], #contact select, #contact input, #contact textarea {
+  width: 100%;
+  padding: 15px;
+  fill: #333;
+  margin-bottom: 15px;
+  border: 1px solid #10e31e;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+#contact input[type="envoyer"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #c16ecc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size:1.5rem;
+  cursor: pointer;
+}
+/* On montre les inputs du formulaire par défaut (car ils sont cachés) */
+#contact input {
+  display: block;
+}
+/* Changer le bouton de couleur */
+#contact input[type="envoyer"]:hover {
+  background-color: #0056b3;
+}
+/* Page flashcard */
+#flashcard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ /* trois colonnes */
+  gap: 1rem;
+ /* Espacement entre les colonnes */
+  margin: 2rem auto;
+}
+/* Conteneur principal de la carte à retournement */
+.flip-card {
+  background-color: transparent;
+  width: px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+/* Conteneur intérieur pour gérer la rotation */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+/* Effet de rotation au survol */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Styles communs pour les faces avant et arrière */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* Style de la face avant */
+.flip-card-front {
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+  border: 2px solid #4836bb;
+  border-radius: 10px;
+}
+/* Style de la face arrière */
+.flip-card-back {
+  background-color: rgb(132, 221, 124);
+  border: 2px solid #4836bb;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+/* logo github footer */
+#github {
+  color: white;
+}

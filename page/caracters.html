@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+    <link rel="icon" type="image/png" href="../img/gemme.ico">
+</head>
+<body>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-burger">
+        <i class="fas fa-bars"></i>
+    </label>
+    <nav>
+        <img src="../img/sims4_logo.png" alt="logo" id="logo">
+        <ul>
+            <li id="afficher-accueil"><a href="../index.html">Accueil</a></li>
+            <li><a href="introduction.html">Présentation</a></li>
+            <li><a href="caracters.html">Personnages</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">Jeu</a>
+                <div class="dropdown-content">
+                    <a href="quizz.html">Quiz</a>
+                    <a href="flashcard.html">Flashcard</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">Audiovisuel</a>
+                <div class="dropdown-content">
+                    <a href="music.html">Musique</a>
+                    <a href="videos.html">Vidéos en lien avec le jeu</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-title">A propos</a>
+                <div class="dropdown-content">
+                    <a href="about.html">Crédits</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <div class="conteneur">
+        <h1>Créez votre avatar Sims</h1>
+
+            <iframe
+            id="avatar"
+            src="https://demo.readyplayer.me/avatar"
+            
+            allow="camera *; microphone *">
+        </iframe>
+        <p>
+            Envie de vous mettre dans la peau d'un Sim ? C'est le moment de laisser libre cours à votre créativité ! Notre créateur d'avatar vous permet de concevoir votre personnage virtuel en quelques clics.
+        </p>
+    </div>
+
+    <footer>
+        <p> 2025 CloudRainy <a id="github" href="https://github.com/CloudRainy"><i class="fa-brands fa-github"></i></a> - Les Sims 4 &copy; Tous droits réservés </p>
+    </footer>
+</body>
+</html>

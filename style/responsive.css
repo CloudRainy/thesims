@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+	#music-audio {
+		grid-template-columns: 1fr;
+		/* Une seule colonne */
+	}
+
+	.main-title {
+		font-size: 1.75rem;
+		/* Taille de police réduite */
+	}
+
+	#besoin {
+		flex-direction: column;
+		/* Empiler les éléments verticalement */
+	}
+
+	#besoin img {
+		width: 100%;
+		/* Largeur de l'image */
+	}
+
+	#competence {
+		grid-template-columns: 1fr;
+		/* Deux colonnes de largeur égale */
+	}
+
+	.competence-section {
+		flex-direction: column;
+		/* Empiler le carrousel et le contenu */
+	}
+
+	.carousel {
+		max-width: 100%;
+		/* Pleine largeur pour le carrousel */
+	}
+
+	.carousel-images {
+		animation: none;
+		/* Désactiver l'animation sur mobile */
+		overflow-x: auto;
+		/* Permettre le défilement horizontal */
+	}
+
+	.conteneur h1 {
+		font-size: 2rem;
+		/* Taille réduite pour le titre principal */
+	}
+
+	.conteneur h2 {
+		font-size: 1.5rem;
+		/* Taille réduite pour les sous-titres */
+	}
+
+	.conteneur iframe {
+		height: 250px;
+		/* Hauteur réduite pour les iframes sur mobile */
+	}
+
+	.video-description {
+		font-size: 0.9rem;
+		/* Taille réduite pour les descriptions */
+	}
+
+	.timeline::before {
+		left: 20px;
+		/* Déplacer la ligne à gauche sur mobile */
+	}
+
+	.timeline-event {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 20px;
+		text-align: left !important;
+		/* Forcer l'alignement à gauche */
+	}
+
+	/* Aligne tous les événements à gauche */
+	.timeline-event:nth-child(even) {
+		left: 0;
+	}
+
+	.timeline-event::before {
+		left: 10px !important;
+		/* Déplacer les points à gauche */
+		right: auto !important;
+	}
+
+	.question {
+		text-align: center;
+	}
+
+	/* page crédit */
+	#conteneur-contact {
+		grid-template-columns: 1fr;
+		/* Une seule colonne */
+		width: 80%;
+	}
+
+	#flashcard {
+		display: grid;
+		/* Afficher les éléments en ligne */
+		grid-template-columns: 1fr;
+		/* Une seule colonne */
+	}
+
+	#accueil-text {
+		font-size: 7rem;
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 1280px) {
+	#presentation {
+		flex-direction: column;
+		/* Empiler les éléments verticalement */
+		gap: 1rem;
+		/* Espacement réduit entre les éléments */
+	}
+
+	#baniere img {
+		width: 100%;
+		/* Largeur de l'image */
+	}
+}

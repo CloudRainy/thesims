@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="icon" type="image/png" href="../img/gemme.ico">
+</head>
+
+<body>
+    <div class="video-background" id="welcome-video"> <video autoplay muted loop id="background-video">
+            <source src="video/background-cut.mp4" type="video/mp4">
+        </video> </div> <input type="checkbox" id="menu-toggle" class="menu-toggle"> <label for="menu-toggle" class="menu-burger"> <i class="fas fa-bars"></i> </label>
+    <nav> <img src="img/sims4_logo.png" alt="logo" id="logo">
+        <ul>
+            <li><a href="page/introduction.html">Présentation</a></li>
+            <li><a href="page/caracters.html">Personnages</a></li>
+            <li><a href="page/timeline.html">Timeline</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-title">Jeu</a>
+                <div class="dropdown-content"> <a href="page/quizz.html">Quiz</a> <a href="page/flashcard.html">Flashcard</a> </div>
+            </li>
+            <li class="dropdown"> <a href="#" class="dropdown-title">Audiovisuel</a>
+                <div class="dropdown-content"> <a href="page/music.html">Musique</a> <a href="page/videos.html">Vidéos en lien avec le jeu</a> </div>
+            </li>
+            <li class="dropdown"> <a href="#" class="dropdown-title">A propos</a>
+                <div class="dropdown-content"> <a href="page/about.html">Crédits</a> <a href="page/contact">Contact</a> </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="accueil-titre">
+        <h1 id="accueil-text">Les Sims</h1>
+    </div>
+    <footer>
+        <p> 2025 CloudRainy <a id="github" href="https://github.com/CloudRainy"><i class="fa-brands fa-github"></i></a> - Les Sims 4 &copy; Tous droits réservés </p>
+    </footer>
+</body>
+
+</html>
